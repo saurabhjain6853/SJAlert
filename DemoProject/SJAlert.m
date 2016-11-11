@@ -20,6 +20,7 @@
     
     UIAlertController *alert=[UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *action=[UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if(completionHander)
         completionHander(YES);
     }];
     [alert addAction:action];
@@ -30,9 +31,11 @@
     
     UIAlertController *alert= [UIAlertController alertControllerWithTitle:title message:message preferredStyle:style];
     UIAlertAction *action1=[UIAlertAction actionWithTitle:actionTitle1 style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if(CompletionHandler1)
         CompletionHandler1(YES);
     }];
     UIAlertAction *action2= [UIAlertAction actionWithTitle:actionTitle2 style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        if(CompletionHandler2)
         CompletionHandler2(YES);
     }];
     if(style==UIAlertControllerStyleActionSheet){
@@ -52,6 +55,7 @@
     }];
     UIAlertAction *action=[UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         UITextField *text=alert.textFields.firstObject;
+        if(CompletionHandler)
         CompletionHandler(text);
     }];
     [alert addAction:action];
@@ -72,6 +76,7 @@
     UIAlertAction *action=[UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         UITextField *text1= alert.textFields.firstObject;
         UITextField *text2= alert.textFields.lastObject;
+        if(completionHandler)
         completionHandler(text1,text2);
     }];
     [alert addAction:action];
