@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0E-Ry-xSZ">
+                                <rect key="frame" x="118" y="86" width="84" height="30"/>
+                                <state key="normal" title="Simple Alert"/>
+                                <connections>
+                                    <action selector="simpleAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RP9-mQ-SEE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-nE-Use">
+                                <rect key="frame" x="96" y="133" width="129" height="30"/>
+                                <state key="normal" title="Single Button Alert"/>
+                                <connections>
+                                    <action selector="singleButtonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="86N-RI-HMP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="625-zZ-WHX">
+                                <rect key="frame" x="92" y="178" width="136" height="30"/>
+                                <state key="normal" title="Double Button Alert"/>
+                                <connections>
+                                    <action selector="doubleButtonAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tR6-en-px6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9b-Aq-RYu">
+                                <rect key="frame" x="104" y="224" width="112" height="30"/>
+                                <state key="normal" title="Single Text Alert"/>
+                                <connections>
+                                    <action selector="singleTextAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vkz-gm-SbV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSe-qU-gTE">
+                                <rect key="frame" x="101" y="271" width="119" height="30"/>
+                                <state key="normal" title="Double Text Alert"/>
+                                <connections>
+                                    <action selector="doubleTextAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2c-Zm-ePk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vst-fU-ejm">
+                                <rect key="frame" x="103" y="318" width="114" height="30"/>
+                                <state key="normal" title="Custom Alert Up"/>
+                                <connections>
+                                    <action selector="customAlertUP:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ykn-18-0QV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-C2-X5E">
+                                <rect key="frame" x="94" y="365" width="133" height="30"/>
+                                <state key="normal" title="Custom Alert Down"/>
+                                <connections>
+                                    <action selector="customAlertDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6AE-m6-xbV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="228"/>
+        </scene>
+    </scenes>
+</document>
